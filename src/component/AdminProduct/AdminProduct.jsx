@@ -828,7 +828,7 @@ export const AdminProduct = () => {
                                 },
                             ]}
                         >
-                            <InputComponent value={stateProductDetail.countInStock} onChange={handleOnChangeProductDetail} name="countInStock" />
+                            <InputComponent type="number" value={stateProductDetail.countInStock} onChange={handleOnChangeProductDetail} name="countInStock" />
                         </Form.Item>
                         <Form.Item
                             label="Discount"

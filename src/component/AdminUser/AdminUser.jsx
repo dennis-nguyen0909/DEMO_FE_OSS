@@ -1,4 +1,4 @@
-import { Button, Form, Input, Space, message } from 'antd'
+import { Button, Form, Input, Space, message, notification } from 'antd'
 import React, { useEffect, useMemo, useRef, useState } from 'react'
 import { TableComponent } from '../TableComponent/TableComponent'
 import { InputComponent } from '../InputComponent/InputComponent';
@@ -198,7 +198,15 @@ export const AdminUser = () => {
                 avatar,
                 address,
             } = data
+            console.log("dudeptrai",stateUser)
             const res = await UserService.createUser(data);
+            console.log("res,res",res)
+            if(res.status === 'Error'){
+                notification.error({
+                    message: 'Error',
+                    description: res.message,
+                });
+            }
             return res;
         }
     )
@@ -229,7 +237,7 @@ export const AdminUser = () => {
                     // Cập nhật state sau khi nhận được kết quả từ API
                     setStateUser(prevState => ({
                         ...prevState,
-                        image: res.data.secure_url
+                        avatar: res.data.secure_url
                     }));
                     setLoading(false);
                 }
