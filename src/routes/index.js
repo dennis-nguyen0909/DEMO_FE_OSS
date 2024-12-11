@@ -8,10 +8,18 @@ import { SignUpPage } from "../pages/SignUpPage/SignUpPage";
 import { ProductPage } from "../pages/ProductPage/ProductPage";
 import { NotFoundPage } from "../pages/NotFoundPage/NotFoundPage";
 import { SalesProduct } from "../pages/SalesProduct/SalesProduct";
+import { MyOrderPage } from "../pages/MyOrderPage/MyOrderPage";
+
 export const routes = [
   {
     path: "/product-detail/:id",
     page: ProductDetailPage,
+    isShowHeader: true,
+    isShowFooter: false,
+  },
+  {
+    path: "/my-order",
+    page: MyOrderPage,
     isShowHeader: true,
     isShowFooter: false,
   },
