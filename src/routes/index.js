@@ -1,5 +1,8 @@
 import { LogInPage } from "../pages/LogInPage/LogInPage";
 import { ProductDetailPage } from "../pages/ProductDetailPage/ProductDetailPage";
+import { AdminPage } from "../pages/AdminPage/AdminPage";
+import { HomePage } from "../pages/HomePage/HomePage";
+import { SignUpPage } from "../pages/SignUpPage/SignUpPage";
 export const routes = [
   {
     path: "/product-detail/:id",
@@ -10,6 +13,23 @@ export const routes = [
   {
     path: "/login",
     page: LogInPage,
+    isShowHeader: false,
+  },
+  {
+    path: "/",
+    page: HomePage,
+    isShowHeader: true,
+    isShowFooter: true,
+  },
+  {
+    path: "/system/admin",
+    page: AdminPage,
+    isShowHeader: false,
+    isPrivate: true,
+  },
+  {
+    path: "/sign-up",
+    page: SignUpPage,
     isShowHeader: false,
   },
 ];
