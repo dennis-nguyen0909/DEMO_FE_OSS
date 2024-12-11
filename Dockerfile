@@ -27,3 +27,13 @@ EXPOSE 80
 
 # Khởi động Nginx khi container chạy
 CMD ["nginx", "-g", "daemon off;"]
+
+#  docker build -t fe-ecomerce .
+#  docker run -p 80:80 fe-ecomerce
+
+#docker login
+#docker tag fe-ecomerce minhduyyy/fe-ecomerce:latest
+#docker push minhduyyy/fe-ecomerce:latest
+
+#docker pull minhduyyy/fe-ecomerce:latest
+#docker run -p 3000:80 fe-ecomerce
