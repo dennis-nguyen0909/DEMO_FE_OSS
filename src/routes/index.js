@@ -1,5 +1,6 @@
 import { SearchProduct } from "../pages/SearchProduct/SearchProduct";
 import { LogInPage } from "../pages/LogInPage/LogInPage";
+import { TypeProductPage } from "../pages/TypeProductPage/TypeProductPage";
 import { ProductDetailPage } from "../pages/ProductDetailPage/ProductDetailPage";
 import { AdminPage } from "../pages/AdminPage/AdminPage";
 import { HomePage } from "../pages/HomePage/HomePage";
@@ -52,6 +53,12 @@ export const routes = [
   {
     path: "/product-sales",
     page: SalesProduct,
+    isShowHeader: true,
+    isShowFooter: false,
+  },
+  {
+    path: "/product/:type",
+    page: TypeProductPage,
     isShowHeader: true,
     isShowFooter: false,
   },
