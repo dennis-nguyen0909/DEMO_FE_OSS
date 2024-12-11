@@ -1,10 +1,11 @@
-import { SearchProduct } from "../pages/SearchProduct/SearchProduct";
+
+import { SalesProduct } from "../pages/SalesProduct/SalesProduct";
 
 export const routes = [
     
     {
-        path: '/search-product',
-        page: SearchProduct,
+        path: '/product-sales',
+        page: SalesProduct,
         isShowHeader: true,
         isShowFooter: false,
     },
