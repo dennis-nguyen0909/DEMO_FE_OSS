@@ -4,6 +4,7 @@ import { AdminPage } from "../pages/AdminPage/AdminPage";
 import { HomePage } from "../pages/HomePage/HomePage";
 import { SignUpPage } from "../pages/SignUpPage/SignUpPage";
 import { ProductPage } from "../pages/ProductPage/ProductPage";
+import { MyOrderDetailsPage } from "../pages/MyOrderDetailsPage/MyOrderDetailsPage";
 export const routes = [
   {
     path: "/product-detail/:id",
@@ -36,6 +37,12 @@ export const routes = [
   {
     path: "/product",
     page: ProductPage,
+    isShowHeader: true,
+    isShowFooter: false,
+  },
+  {
+    path: '/my-order-detail/:id',
+    page: MyOrderDetailsPage,
     isShowHeader: true,
     isShowFooter: false,
   },
