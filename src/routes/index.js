@@ -10,10 +10,17 @@ import { NotFoundPage } from "../pages/NotFoundPage/NotFoundPage";
 import { SalesProduct } from "../pages/SalesProduct/SalesProduct";
 import { MyOrderPage } from "../pages/MyOrderPage/MyOrderPage";
 import { OrderSuccessPage } from "../pages/OrderSuccessPage/OrderSuccessPage";
+import { PaymentPage } from "../pages/PaymentPage/PaymentPage";
 export const routes = [
   {
     path: "/product-detail/:id",
     page: ProductDetailPage,
+    isShowHeader: true,
+    isShowFooter: false,
+  },
+  {
+    path: "/payment",
+    page: PaymentPage,
     isShowHeader: true,
     isShowFooter: false,
   },
