@@ -141,7 +141,7 @@ export const orderSlide = createSlice({
       // };
     },
     resetOrder: (state, action) => {
-      initialState();
+      return {...initialState}
     },
   },
 });
