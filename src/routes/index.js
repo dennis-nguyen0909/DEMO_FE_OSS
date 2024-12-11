@@ -13,6 +13,8 @@ import { SalesProduct } from "../pages/SalesProduct/SalesProduct";
 import { OrderSuccessPage } from "../pages/OrderSuccessPage/OrderSuccessPage";
 import { PaymentPage } from "../pages/PaymentPage/PaymentPage";
 import { ProfileUserPage } from "../pages/ProfileUserPage/ProfileUserPage";
+import { OrderPage } from "../pages/OrderPage/OrderPage";
+import { SupportPage } from "../pages/SupportPage/SupportPage";
 export const routes = [
   {
     path: "/product-detail/:id",
@@ -94,6 +96,18 @@ export const routes = [
   {
     path: "/order-success",
     page: OrderSuccessPage,
+    isShowHeader: true,
+    isShowFooter: false,
+  },
+  {
+    path: "/order",
+    page: OrderPage,
+    isShowHeader: true,
+    isShowFooter: false,
+  },
+  {
+    path: "/support",
+    page: SupportPage,
     isShowHeader: true,
     isShowFooter: false,
   },
